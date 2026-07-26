@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f5f9;
+}
+
+.card-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    width: 350px;
+}
+
+.badge {
+    background-color: #cbd5e1;
+    color: #334155;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.skill-tag {
+    background-color: #e2e8f0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 2px;
+    display: inline-block;
+}
+
+/* Styling for ClassList Manipulation - Pulsating ClassList */
+.alert-mode {
+    border: 3px solid #ef4444 !important;
+    background-color: #fef2f2 !important;
+    
+    /* This links the element to our custom animation script below */
+    /* It takes 1.5 seconds per pulse wave, loops forever (infinite), and moves smoothly (ease-in-out) */
+    animation: alertPulse 1.5s infinite ease-in-out;
+}
+
+/* The pulse animation timeline script */
+@keyframes alertPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+    50% {
+        transform: scale(1.04); /* Zooms out slightly at the halfway point */
+        box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3); /* Adds a soft red glow */
+    }
+    100% {
+        transform: scale(1); /* Shrinks back down smoothly to the original size */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+}
+
