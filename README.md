@@ -21,14 +21,30 @@ To work on these tasks, you must set up your own copy of the project:
 * How to modify text payloads and structural layout dimensions instantly on live sites
 
 ## 🛠️ Classroom Tasks
+### TASK 1: Accessing the Webpage Body
+Learn how the browser reads HTML as a tree of objects. Practice targeting the root of your page by changing the background color directly through the `document.body` property.
 
-1. **The DOM Blueprint Architecture:** Explore the global structural model mapping layout documents. Understand how tags convert into individual modifiable objects.
-2. **Global Target Channel:** Interface with the outermost layer of your window hierarchy by manipulating properties directly anchored on the `document.body` structural object.
-3. **Element Selection Methods:** Master the targeting APIs used to isolate target strings across a page layout:
-   * `.querySelector()`: The modern, flexible utility searching via universal CSS tag, class, or id configurations.
-   * `.getElementById()`: The highly precise element filter locking strictly onto individual ID definitions.
-   * `.getElementsByClassName()` / `.getElementsByTagName()`: Advanced group selection hooks pulling arrays of matching document entries.
-4. **Styling Engine Implementations:** Inject custom structural colors onto elements. Examine why typical dash-notation CSS properties (like `background-color`) transform into pure camelCase definitions (like `backgroundColor`) when written in JavaScript.
+### TASK 2: Selecting Elements by ID and Selector
+Isolate specific items on your page using the two most common selection tools:
+* **`document.getElementById()`**: Targets a single element using its unique ID name.
+* **`document.querySelector()`**: A flexible tool that finds elements using standard CSS selectors (like `.class-name` or `#id-name`).
+
+### TASK 3: Styling Elements with JavaScript
+Apply styling directly to your selected elements. Learn why standard CSS property names change from dash-style to camelCase when written in JavaScript (for example, `background-color` becomes `backgroundColor`).
+
+### TASK 4: Handling Multiple Elements (Optional)
+Group elements together using `document.getElementsByClassName()` or `document.getElementsByTagName()`. Learn how to use numbers in brackets (like `[0]` or `[1]`) to pick and style specific items out of a list.
+
+### TASK 5: Changing Text vs Changing HTML (`.innerText` vs `.innerHTML`)
+Explore the two ways to change the content inside an element:
+* **`.innerText`**: Changes content strictly into plain text.
+* **`.innerHTML`**: Allows you to insert raw HTML tags (like `<strong>` or `<span>`) to format your text dynamically.
+
+### TASK 6: Managing Classes with `.classList`
+Move away from changing inline styles one-by-one. Practice using `classList.add()` and `classList.remove()` to instantly apply pre-written CSS classes, such as a pulsating border animation.
+
+### TASK 7: Moving up the Tree (`.parentElement`)
+Learn how to find and style a parent container by starting from a child element. Practice using `.parentElement` to grab the main card wrapper without needing a unique ID.
 
 ## 🚀 Execution Instructions
 1. Save your modifications in your local workspace files.
